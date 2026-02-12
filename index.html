@@ -30,16 +30,9 @@
   <header class="header">
     <div class="container header-inner">
       <a class="brand" href="index.html" aria-label="TraverseCo Home">
-        <span class="brand-mark">T</span>
+        <img src="assets/logo.png" alt="TraverseCo logo" class="brand-logo">
         <span class="brand-name">TraverseCo</span>
       </a>
-
-      <nav class="nav" aria-label="Primary">
-        <a href="https://shop.transverseco.com/products/the-og">Shop</a>
-        <a href="how-it-works.html">How It Works</a>
-        <a href="faq.html">FAQ</a>
-        <a href="about.html">About</a>
-      </nav>
 
       <div class="header-actions">
         <a class="btn btn-ghost" href="https://shop.transverseco.com/products/the-og">Shop The OG</a>
@@ -52,7 +45,7 @@
 
     <div class="mobile-nav" hidden>
       <a href="https://shop.transverseco.com/products/the-og">Shop</a>
-      <a href="how-it-works.html">How It Works</a>
+      <a href="#how-it-works">How It Works</a>
       <a href="faq.html">FAQ</a>
       <a href="about.html">About</a>
     </div>
@@ -72,7 +65,8 @@
 
           <div class="hero-ctas">
             <a class="btn btn-primary" href="https://shop.transverseco.com/products/the-og">Shop The OG</a>
-            <a class="btn btn-outline" href="how-it-works.html">See How It Works</a>
+            <!-- UPDATED: jump to section -->
+            <a class="btn btn-outline" href="#how-it-works">See How It Works</a>
           </div>
 
           <div class="trust-row">
@@ -105,37 +99,53 @@
       </div>
     </section>
 
-    <!-- How it works (3 steps) -->
-    <section class="section section-muted">
-      <div class="container">
-        <div class="section-head">
-          <h2>How it works</h2>
-          <p>Simple setup. Locked-in comfort.</p>
-        </div>
+   <!-- How it works (3 steps) -->
+   <!-- UPDATED: added id for anchor scrolling -->
+<section id="how-it-works" class="section section-muted">
+  <div class="container">
+    <div class="section-head">
+      <h2>How it works</h2>
+      <p>Simple setup. Locked-in comfort.</p>
+    </div>
 
-        <div class="steps">
-          <article class="step">
-            <div class="step-num">1</div>
-            <h3>Unsnaps on both sides</h3>
-            <p>Quick release straps sit clean against the waistband.</p>
-          </article>
-          <article class="step">
-            <div class="step-num">2</div>
-            <h3>Thread through belt loops</h3>
-            <p>Works with most pants and shorts with standard loops.</p>
-          </article>
-          <article class="step">
-            <div class="step-num">3</div>
-            <h3>Snap back into place</h3>
-            <p>Even tension keeps everything secure without a belt.</p>
-          </article>
-        </div>
+    <div class="steps">
 
-        <div class="center">
-          <a class="btn btn-primary" href="https://shop.transverseco.com/products/the-og">Get The OG</a>
-        </div>
-      </div>
-    </section>
+      <article class="step">
+        <img src="assets/how-step-0.JPG" alt="Not threaded through belt loops" class="step-img">
+
+        <h3>
+          <span class="step-num">1</span>
+          Unsnaps on both sides
+        </h3>
+
+        <p>Quick release straps sit clean against the waistband.</p>
+      </article>
+
+      <article class="step">
+        <img src="assets/how-step-1.JPG" alt="Thread through belt loops" class="step-img">
+
+        <h3>
+          <span class="step-num">2</span>
+          Thread through belt loops
+        </h3>
+
+        <p>Works with most pants and shorts with standard loops.</p>
+      </article>
+
+      <article class="step">
+        <img src="assets/how-step-2.JPG" alt="Threaded through belt loops" class="step-img">
+
+        <h3>
+          <span class="step-num">3</span>
+          Snap back into place
+        </h3>
+
+        <p>Even tension keeps everything secure without a belt.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
 
     <!-- Reviews -->
     <section class="section">
@@ -179,8 +189,8 @@
     <div class="container footer-grid">
       <div>
         <div class="brand brand-footer">
-          <span class="brand-mark">T</span>
-          <span class="brand-name">TraverseCo</span>
+          <img src="assets/logo.png" alt="TraverseCo logo" class="brand-logo">
+                    <span class="brand-name">TraverseCo</span>
         </div>
         <p class="muted">Comfort-first essentials built for movement.</p>
       </div>
@@ -188,15 +198,31 @@
       <div>
         <h4>Links</h4>
         <a href="https://shop.transverseco.com/products/the-og">Shop</a>
-        <a href="how-it-works.html">How It Works</a>
-        <a href="faq.html">FAQ</a>
-        <a href="about.html">About</a>
+        <a href="#how-it-works">How It Works</a>
       </div>
 
       <div>
-        <h4>Contact</h4>
-        <p class="muted">Add email + socials here.</p>
-      </div>
+        <h4>Contact Us At </h4>
+        <P>transverseco@gmail.com</P>
+        <div>
+          <h4>Follow</h4>
+        
+          <div class="socials">
+        
+            <a href="https://www.instagram.com/transverseco" target="_blank" aria-label="Instagram">
+              <img src="assets/insta.png" alt="Instagram">
+            </a>
+        
+            <a href="https://www.facebook.com/TransverseCo/" target="_blank" aria-label="Facebook">
+              <img src="assets/facebook.svg" alt="Facebook">
+            </a>
+        
+            <a href="https://www.tiktok.com/@transverseco" target="_blank" aria-label="TikTok">
+              <img src="assets/tiktok.png" alt="TikTok">
+            </a>
+        
+          </div>
+        </div>      </div>
     </div>
     <div class="container footer-bottom">
       <p class="muted">© <span id="year"></span> TraverseCo</p>

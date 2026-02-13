@@ -35,27 +35,28 @@
       </a>
 
       <div class="header-actions">
-        <a class="btn btn-ghost" href="https://shop.transverseco.com/products/the-og">Shop The OG</a>
+        <!-- UPDATED: scrolls to embedded Shopify section -->
+        <a class="btn btn-ghost" href="#shop">Shop The OG</a>
       </div>
 
-      <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+      <button class="hamburger" type="button" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
 
     <div class="mobile-nav" hidden>
-      <a href="https://shop.transverseco.com/products/the-og">Shop</a>
+      <a href="#shop">Shop</a>
       <a href="#how-it-works">How It Works</a>
       <a href="faq.html">FAQ</a>
       <a href="about.html">About</a>
     </div>
   </header>
 
-  <!-- Hero -->
+  <!-- Main -->
   <main>
+    <!-- Hero -->
     <section class="hero">
       <div class="container hero-grid">
-
         <div class="hero-copy">
           <p class="eyebrow">No belt. No hassle.</p>
           <h1>Say goodbye to your belt and hello to comfort.</h1>
@@ -64,8 +65,8 @@
           </p>
 
           <div class="hero-ctas">
-            <a class="btn btn-primary" href="https://shop.transverseco.com/products/the-og">Shop The OG</a>
-            <!-- UPDATED: jump to section -->
+            <!-- UPDATED: scrolls to embedded Shopify section -->
+            <a class="btn btn-primary" href="#shop">Shop The OG</a>
             <a class="btn btn-outline" href="#how-it-works">See How It Works</a>
           </div>
 
@@ -81,7 +82,6 @@
             <img src="assets/hero.jpg" alt="TraverseCo built-in strap system" class="hero-img">
           </div>
         </div>
-
       </div>
     </section>
 
@@ -99,53 +99,47 @@
       </div>
     </section>
 
-   <!-- How it works (3 steps) -->
-   <!-- UPDATED: added id for anchor scrolling -->
-<section id="how-it-works" class="section section-muted">
-  <div class="container">
-    <div class="section-head">
-      <h2>How it works</h2>
-      <p>Simple setup. Locked-in comfort.</p>
-    </div>
+    <!-- How it works (3 steps) -->
+    <section id="how-it-works" class="section section-muted">
+      <div class="container">
+        <div class="section-head">
+          <h2>How it works</h2>
+          <p>Simple setup. Locked-in comfort.</p>
+        </div>
 
-    <div class="steps">
+        <div class="steps">
+          <article class="step">
+            <img src="assets/how-step-0.JPG" alt="Not threaded through belt loops" class="step-img">
+            <h3><span class="step-num">1</span> Unsnaps on both sides</h3>
+            <p>Quick release straps sit clean against the waistband.</p>
+          </article>
 
-      <article class="step">
-        <img src="assets/how-step-0.JPG" alt="Not threaded through belt loops" class="step-img">
+          <article class="step">
+            <img src="assets/how-step-1.JPG" alt="Thread through belt loops" class="step-img">
+            <h3><span class="step-num">2</span> Thread through belt loops</h3>
+            <p>Works with most pants and shorts with standard loops.</p>
+          </article>
 
-        <h3>
-          <span class="step-num">1</span>
-          Unsnaps on both sides
-        </h3>
+          <article class="step">
+            <img src="assets/how-step-2.JPG" alt="Threaded through belt loops" class="step-img">
+            <h3><span class="step-num">3</span> Snap back into place</h3>
+            <p>Even tension keeps everything secure without a belt.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-        <p>Quick release straps sit clean against the waistband.</p>
-      </article>
+    <!-- Shopify Buy Button (The OG) -->
+    <section class="section" id="shop">
+      <div class="container">
+        <div class="section-head">
+          <h2>Shop The OG</h2>
+          <p>Secure checkout powered by Shopify.</p>
+        </div>
 
-      <article class="step">
-        <img src="assets/how-step-1.JPG" alt="Thread through belt loops" class="step-img">
-
-        <h3>
-          <span class="step-num">2</span>
-          Thread through belt loops
-        </h3>
-
-        <p>Works with most pants and shorts with standard loops.</p>
-      </article>
-
-      <article class="step">
-        <img src="assets/how-step-2.JPG" alt="Threaded through belt loops" class="step-img">
-
-        <h3>
-          <span class="step-num">3</span>
-          Snap back into place
-        </h3>
-
-        <p>Even tension keeps everything secure without a belt.</p>
-      </article>
-
-    </div>
-  </div>
-</section>
+        <div id="product-component-1770952349925"></div>
+      </div>
+    </section>
 
     <!-- Reviews -->
     <section class="section">
@@ -179,56 +173,122 @@
           <h2>Ready to strap into comfort?</h2>
           <p>Try The OG today. Fast shipping. Easy returns.</p>
         </div>
-        <a class="btn btn-primary" href="https://shop.transverseco.com/products/the-og">Shop Now</a>
+        <!-- UPDATED: scrolls to embedded Shopify section -->
+        <a class="btn btn-primary" href="#shop">Shop Now</a>
       </div>
     </section>
   </main>
 
   <!-- Footer -->
-  <footer class="footer">
+  <footer class="footer" id="contact">
     <div class="container footer-grid">
       <div>
         <div class="brand brand-footer">
           <img src="assets/logo.png" alt="TraverseCo logo" class="brand-logo">
-                    <span class="brand-name">TraverseCo</span>
+          <span class="brand-name">TraverseCo</span>
         </div>
         <p class="muted">Comfort-first essentials built for movement.</p>
       </div>
 
       <div>
         <h4>Links</h4>
-        <a href="https://shop.transverseco.com/products/the-og">Shop</a>
+        <a href="#shop">Shop</a>
         <a href="#how-it-works">How It Works</a>
       </div>
 
       <div>
-        <h4>Contact Us At </h4>
-        <P>transverseco@gmail.com</P>
-        <div>
-          <h4>Follow</h4>
-        
-          <div class="socials">
-        
-            <a href="https://www.instagram.com/transverseco" target="_blank" aria-label="Instagram">
-              <img src="assets/insta.png" alt="Instagram">
-            </a>
-        
-            <a href="https://www.facebook.com/TransverseCo/" target="_blank" aria-label="Facebook">
-              <img src="assets/facebook.svg" alt="Facebook">
-            </a>
-        
-            <a href="https://www.tiktok.com/@transverseco" target="_blank" aria-label="TikTok">
-              <img src="assets/tiktok.png" alt="TikTok">
-            </a>
-        
-          </div>
-        </div>      </div>
+        <h4>Contact Us At</h4>
+        <p>transverseco@gmail.com</p>
+
+        <h4>Follow</h4>
+        <div class="socials">
+          <a href="https://www.instagram.com/transverseco" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <img src="assets/insta.png" alt="Instagram">
+          </a>
+
+          <a href="https://www.facebook.com/TransverseCo/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <img src="assets/facebook.svg" alt="Facebook">
+          </a>
+
+          <a href="https://www.tiktok.com/@transverseco" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+            <img src="assets/tiktok.png" alt="TikTok">
+          </a>
+        </div>
+      </div>
     </div>
+
     <div class="container footer-bottom">
       <p class="muted">© <span id="year"></span> TraverseCo</p>
     </div>
   </footer>
 
   <script src="js/main.js"></script>
+
+  <!-- Shopify Buy Button embed -->
+  <script type="text/javascript">
+    (function () {
+      var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+
+      if (window.ShopifyBuy) {
+        if (window.ShopifyBuy.UI) ShopifyBuyInit();
+        else loadScript();
+      } else {
+        loadScript();
+      }
+
+      function loadScript() {
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = scriptURL;
+        (document.head || document.body).appendChild(script);
+        script.onload = ShopifyBuyInit;
+      }
+
+      function ShopifyBuyInit() {
+        var client = ShopifyBuy.buildClient({
+          domain: 'transverseco.myshopify.com',
+          storefrontAccessToken: 'a1bdb6acef088749ebad0df71779a68e',
+        });
+
+        ShopifyBuy.UI.onReady(client).then(function (ui) {
+          ui.createComponent('product', {
+            id: '1934410055746',
+            node: document.getElementById('product-component-1770952349925'),
+            moneyFormat: '%24%7B%7Bamount%7D%7D',
+            options: {
+              product: {
+                styles: {
+                  product: { "max-width": "100%", "margin": "0" },
+                  button: {
+                    "background-color": "#0b0d12",
+                    "color": "#ffffff",
+                    "font-family": "Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif",
+                    "font-weight": "600",
+                    "border-radius": "12px",
+                    "padding": "12px 16px"
+                  },
+                  title: { "font-family": "\"Space Grotesk\", Inter, sans-serif", "font-weight": "700" },
+                  price: { "font-family": "Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" }
+                },
+                text: { button: "Add to cart" }
+              },
+              cart: { text: { total: "Subtotal", button: "Checkout" } },
+              toggle: {
+                styles: {
+                  toggle: {
+                    "background-color": "#0b0d12",
+                    "font-family": "Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif",
+                    "font-weight": "600",
+                    "border-radius": "12px"
+                  }
+                }
+              }
+            }
+          });
+        });
+      }
+    })();
+  </script>
+
 </body>
 </html>
